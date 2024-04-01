@@ -4,4 +4,7 @@ include mixins/message.pug
 block content
   each msg in messages 
     +message(msg.text, msg.user, msg.added)
+  each link in links
+    a(href=link.path) !{link.text}
+  
 
