@@ -14,9 +14,15 @@ const messages = [
   },
 ];
 
+const links = [{ text: 'Submit new message', path: '/new' }];
+
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Mini Messageboard', messages: messages });
+  res.render('index', {
+    title: 'Mini Messageboard',
+    messages: messages,
+    links: links,
+  });
 });
 
 /* GET new message page */
