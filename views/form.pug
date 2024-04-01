@@ -5,8 +5,8 @@ block content
   form#newMessageForm(method='POST' action='/new')
     div.form-group
       label.name(for='name') Name:
-      input#name(type='text' placeholder='Name')
+      input#name(type='text' placeholder='Name' name='name')
     div.form-group
       label.messageText(for='messageText') Message:
-      textarea#messageText(placeholder='Your message here' cols='40' rows='5')
-    button.btn.btn-primary(type='submit', name='newMsgSubmit') Submit
+      textarea#messageText(placeholder='Your message here' cols='40' rows='5' name='messageText')
+    button.btn.btn-primary(type='submit') Submit
